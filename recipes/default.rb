@@ -44,6 +44,7 @@ mongodb_instance "mongodb" do
   port         node['mongodb']['port']
   logpath      node['mongodb']['logpath']
   dbpath       node['mongodb']['dbpath']
+  replicaset   node
   enable_rest  node['mongodb']['enable_rest']
   smallfiles   node['mongodb']['smallfiles']
 end
